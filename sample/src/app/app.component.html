@@ -1,0 +1,25 @@
+
+
+
+<div class="counter">
+  <h1>Counter</h1>
+  <button id="in" (click)="inc()">Increment</button>
+  <h1>{{ cnt }}</h1>
+  <button id="dec" (click)="dec()">Decrement</button>
+</div>
+
+<div>
+  <h2>Routes</h2>
+<nav>
+  <ul>
+    <li>
+      <a routerLink="/todo" routerLinkActive="active" ariaCurrentWhenActive="page">Todo</a>
+    </li>
+    <li>
+      <a routerLink="/weather" routerLinkActive="active" ariaCurrentWhenActive="page">Weather</a>
+    </li>
+  </ul>
+</nav>
+
+<router-outlet></router-outlet>
+</div>

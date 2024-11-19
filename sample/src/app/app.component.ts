@@ -1,0 +1,26 @@
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
+
+@Component({
+  selector: 'app-root',
+  standalone: true,
+  imports: [CommonModule, RouterOutlet, RouterLink, RouterLinkActive],
+  templateUrl:'./app.component.html' ,
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  cnt:number = 0;
+
+  inc() {
+    this.cnt += 1;
+  }
+
+  dec() {
+    this.cnt -= 1;
+    if (this.cnt < 0) {
+      this.cnt = 0;
+      alert('Counter cannot be negative');
+    }
+  }
+}
