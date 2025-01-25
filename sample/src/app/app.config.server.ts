@@ -6,10 +6,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 
 const serverConfig: ApplicationConfig = {
-  // imports:[
-  //   BrowserModule,
-  //   // RouterModule.forRoot(R)
-  // ],
   providers: [
     provideServerRendering()
   ]
